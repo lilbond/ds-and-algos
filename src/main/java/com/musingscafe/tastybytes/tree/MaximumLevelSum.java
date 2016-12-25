@@ -41,4 +41,6 @@ public class MaximumLevelSum {
 
         System.out.println(max);
     }
+
+    //this can be implemented in another way as well
 }
