@@ -79,4 +79,13 @@ public class BinaryTreeUtil {
         return node4;
 
     }
+
+    public static void printInOrder(BinaryTreeNode root) {
+        if (root == null) return;
+
+        printInOrder(root.getLeft());
+        System.out.print(" " + root.getValue());
+        printInOrder(root.getRight());
+    }
+
 }

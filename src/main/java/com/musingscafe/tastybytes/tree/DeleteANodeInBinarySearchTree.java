@@ -9,10 +9,10 @@ import com.musingscafe.tastybytes.tree.support.BinaryTreeUtil;
 public class DeleteANodeInBinarySearchTree {
     public static void main(String[] args) {
         BinaryTreeNode root = BinaryTreeUtil.getSampleBinarySearchTree();
-        printInOrder(root);
+        BinaryTreeUtil.printInOrder(root);
         root = delete(root, 2);
         System.out.println();
-        printInOrder(root);
+        BinaryTreeUtil.printInOrder(root);
 
     }
 
@@ -55,13 +55,4 @@ public class DeleteANodeInBinarySearchTree {
         if (root.getRight() == null) return root;
         return findMax(root.getRight());
     }
-
-    private static void printInOrder(BinaryTreeNode root) {
-        if (root == null) return;
-
-        printInOrder(root.getLeft());
-        System.out.print(" " + root.getValue());
-        printInOrder(root.getRight());
-    }
-
 }
