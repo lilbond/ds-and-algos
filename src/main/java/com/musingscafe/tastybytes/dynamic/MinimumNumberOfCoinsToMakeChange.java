@@ -31,13 +31,7 @@ public class MinimumNumberOfCoinsToMakeChange {
         }
 
 
-        for (int row = 0; row < rows; row++) {
-            for (int col = 0; col < cols; col++) {
-                System.out.print(cache[row][col] + "\t");
-            }
-
-            System.out.println();
-        }
+        printCache(rows, cols, cache);
 
         int min = Integer.MAX_VALUE;
         for (int row = 0; row < rows; row++) {
@@ -47,5 +41,15 @@ public class MinimumNumberOfCoinsToMakeChange {
         }
 
         System.out.println(min);
+    }
+
+    private static void printCache(int rows, int cols, int[][] cache) {
+        for (int row = 0; row < rows; row++) {
+            for (int col = 0; col < cols; col++) {
+                System.out.print(cache[row][col] + "\t");
+            }
+
+            System.out.println();
+        }
     }
 }
