@@ -12,7 +12,7 @@ public class ReverseArray {
         System.out.println();
         reverse(even, 0, 5);
         print(even, 0);
-        System.out.println("-----------------------------------");
+        System.out.println("\n\n-----------------------------------\n");
         print(odd, 0);
         System.out.println();
         reverse(odd, 0, 6);
