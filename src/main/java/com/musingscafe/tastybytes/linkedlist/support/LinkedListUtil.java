@@ -22,7 +22,7 @@ public class LinkedListUtil {
     public static void print(Node head) {
         if (head == null) return;
 
-        System.out.println(head.getValue());
+        System.out.print(head.getValue() + " ");
         print(head.getNext());
     }
 }
