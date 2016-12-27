@@ -8,6 +8,8 @@ public class RearrangePositiveAndNegative {
     /**
      * Rearrange array in alternating positive and negative number
      *
+     * TODO: Here, we have assumed that array starts with positive. We can generalize, if required.
+     *
      */
     public static void main(String[] args) {
         int[] array = new int[] { 6, -2, 4, -3, 5, 6 };
