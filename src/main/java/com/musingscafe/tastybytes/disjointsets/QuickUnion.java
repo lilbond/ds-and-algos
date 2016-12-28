@@ -20,6 +20,18 @@ import com.musingscafe.tastybytes.disjointsets.drivers.Utility;
             |
             3
 
+    When doing a union on two elements in different forests, root of second
+    becomes root of root of first.
+    e.g. union(3,5) => 6 will become root of 9.
+
+    0   1   9   4   9   6   6   7   8   6
+    0   1   6   7   8
+          / |
+        9   5
+      / |
+     2  4
+        |
+        3
   FIXME: Fix if you need to: All operations assumes valid indexes.
  */
 public class QuickUnion {
