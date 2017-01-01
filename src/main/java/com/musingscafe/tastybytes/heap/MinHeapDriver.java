@@ -33,5 +33,14 @@ public class MinHeapDriver {
 
         System.out.println(minHeap.deleteMin());
         minHeap.printLinear();
+
+        System.out.println(minHeap.deleteMin());
+        minHeap.printLinear();
+
+        System.out.println(minHeap.deleteMin());
+        minHeap.printLinear();
+
+        System.out.println(minHeap.deleteMin());
+        minHeap.printLinear();
     }
 }
