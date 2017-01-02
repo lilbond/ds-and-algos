@@ -1,4 +1,6 @@
-package com.musingscafe.tastybytes.heap;
+package com.musingscafe.tastybytes.heap.drivers;
+
+import com.musingscafe.tastybytes.heap.basic.MinHeap;
 
 /**
  * Created by ayadav on 1/2/17.
