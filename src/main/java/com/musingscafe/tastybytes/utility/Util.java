@@ -31,4 +31,13 @@ public class Util {
     public static void newLine() {
         System.out.println();
     }
+
+    public static void print2D(int[][] array, int a, int b) {
+        for (int i = 0; i < a; i++) {
+            for (int j = 0; j < b; j++) {
+                System.out.print(array[i][j] + "\t");
+            }
+            System.out.println();
+        }
+    }
 }

@@ -1,7 +1,7 @@
 package com.musingscafe.tastybytes.dynamic;
 
 /**
- * Created by ayadav on 12/26/16.
+ * Minimum number of coins required to make change for amount
  */
 public class CoinChangeRecursive {
     public static void main(String[] args) {
