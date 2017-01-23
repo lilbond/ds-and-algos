@@ -8,7 +8,11 @@ public class FindKMaxFromBillions {
         int N = 1000;
         int[] array = new int[N];
 
-        for (int i = 0; i < N; i++) {
+//        for (int i = 0; i < N; i++) {
+//            array[i] = i;
+//        }
+
+        for (int i = N - 1; i >= 0; i--) {
             array[i] = i;
         }
 

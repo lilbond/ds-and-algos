@@ -34,7 +34,7 @@ public class QuickSort {
         int j = start;
         int pivot = array[start];
 
-        for (j = start; j <= end; j++) {
+        for (; j <= end; j++) {
             if (pivot >= array[j]) {
                 i++;
                 Util.swapArrayElement(array, i, j);
