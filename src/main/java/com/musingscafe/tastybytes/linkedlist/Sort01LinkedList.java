@@ -4,7 +4,7 @@ import com.musingscafe.tastybytes.linkedlist.support.LinkedListUtil;
 import com.musingscafe.tastybytes.linkedlist.support.Node;
 
 /**
- * Reverse a linked with only zeros and ones
+ * Sort a linked with only zeros and ones
  */
 public class Sort01LinkedList {
     public static void main(String[] args) {
