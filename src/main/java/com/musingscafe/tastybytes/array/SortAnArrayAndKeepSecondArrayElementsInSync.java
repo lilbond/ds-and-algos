@@ -28,22 +28,4 @@ public class SortAnArrayAndKeepSecondArrayElementsInSync {
         Util.printArrayAndNewLine(finishes);
         Util.printArrayAndNewLine(starts);
     }
-
-    /*
-    in partitioning will take start element and try to find the point where it would reside, which means
-    it should be at correct position after partitioning. Elements smaller than it should be at its left and elements
-    greater than it should be at right.
-
-    i = 0
-    {4, 2, 8, 6} if we start with 4
-    if we find any element which is greater than 4 then we increment i
-    2 is not
-    move to 8
-    8 is greater than 4
-     */
-
-    private static int parition() {
-
-        return 0;
-    }
 }
