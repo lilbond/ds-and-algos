@@ -4,7 +4,7 @@ import com.musingscafe.tastybytes.linkedlist.support.LinkedListUtil;
 import com.musingscafe.tastybytes.linkedlist.support.Node;
 
 /**
- * Sort a linked with only zeros and ones
+ * Sort a linked with only zeros and ones. Constraints are: We should not change the value of node and reference.
  */
 public class Sort01LinkedList {
     public static void main(String[] args) {
@@ -12,12 +12,17 @@ public class Sort01LinkedList {
 
         LinkedListUtil.print(head);
 
-        head = sortLinear(head);
+        head = sortNaive(head);
 
         System.out.println();
         LinkedListUtil.print(head);
     }
 
+    /**
+     * First Solution
+     * @param head
+     * @return
+     */
     private static Node sortNonLinear(Node head) {
         Node zeroHead = null;
         Node oneHead = null;
@@ -65,6 +70,11 @@ public class Sort01LinkedList {
         return appendTo;
     }
 
+    /**
+     * Second solution
+     * @param head
+     * @return
+     */
     private static Node sortLinear(Node head) {
         Node zeroHead = null;
         Node oneHead = null;
@@ -109,6 +119,40 @@ public class Sort01LinkedList {
         else {
             zeroTemp.setNext(oneHead);
             head = zeroHead;
+        }
+
+        return head;
+    }
+
+    /**
+     * Solution without constraints
+     */
+    private static Node sortNaive(Node head) {
+        int zeros = 0;
+        Node temp = head;
+
+        while (temp != null) {
+            if (temp.getValue() == 0) {
+                zeros++;
+            }
+            else if (temp.getValue() != 1) {
+                throw new IllegalArgumentException("Expects 0s and 1s only");
+            }
+
+            temp = temp.getNext();
+        }
+
+        temp = head;
+        while (temp != null) {
+            if (zeros > 0) {
+                temp.setValue(0);
+                zeros--;
+            }
+            else {
+                temp.setValue(1);
+            }
+
+            temp = temp.getNext();
         }
 
         return head;
